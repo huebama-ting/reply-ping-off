@@ -2,7 +2,7 @@
  * @name ReplyPingOff
  * @author huebama-ting
  * @description Turn off ping when replying to messages. To send a ping, click the ping button before sending the message.
- * @version 1.0.0
+ * @version 1.0.1
  * @source https://github.com/huebama-ting/reply-ping-off
  */
  'use strict'
@@ -20,7 +20,7 @@
   clickEventHandler = (event) => this.clickReplyButton(event);
 
   clickReplyButton() {
-    let pingButton = document.querySelector(ReplyPingOffPlugin.pingButtonSelector);
+    const pingButton = document.querySelector(ReplyPingOffPlugin.pingButtonSelector);
 
     // Do not do anything if the element is not found
     if (!pingButton) {
